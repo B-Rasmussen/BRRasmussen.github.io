@@ -1,0 +1,131 @@
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<!-- My own CSS -->
+		<link rel="stylesheet" href="style.css">
+		
+		<script>
+		$(document).ready(function(){
+			// Slide Timer
+			$("#MySlide").carousel({interval: 5000});
+			
+			// Slide Indicators
+			$(".item1").click(function(){
+				$("#MySlide").carousel(0);
+			});
+			$(".item2").click(function(){
+				$("#MySlide").carousel(1);
+			});
+			$(".item3").click(function(){
+				$("#MySlide").carousel(2);
+			});
+			
+			// Slide Controls
+			$(".left").click(function(){
+				$("#MySlide").carousel("prev");
+			});
+			$(".right").click(function(){
+				$("#MySlide").carousel("next");
+			});
+		});
+		</script>
+	
+		<title>Brandon Rasmussen</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+		<!-- Navbar section -->
+			<nav class="navbar navbar-default navbar-static-top">
+				<div class="nav navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar navbar-brand" href="index.html" id="NavLogo">Brandon Rasmussen</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="MyNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="Index.html" id="active">Home</a></li>
+						
+						<!-- Dropdown Menu -->
+						<li class="dropdown" id="test">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
+							<i class="caret"></i></a>
+							<ul class="dropdown-menu">
+								<li><a href="Personal_Projects.html">Personal Projects</a></li>
+								<li><a href="School_Projects.html">School Projects</a></li>
+							</ul>
+						</li>
+						<li><a href="https://www.linkedin.com/in/brandon-rasmussen-486854132/" target="_blank"><img src="Images/linkedin-b&w.png"></img></a></li>
+						<li id="end"><a href="https://github.com/BRRasmussen" target="_blank">GitHub</a></li>
+					</ul>
+				</div>
+			</nav>
+		
+		<!-- Main Section -->	
+			<div class="container-fluid center">
+				<div id="MySlide" class="carousel slide">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li class="item1 active"></li>
+						<li class="item2"></li>
+						<li class="item3"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img id="slideshow" src="Images/BelmontPier.jpg">
+								<div class="container-fluid">
+									<div class="carousel-caption">
+										<h1>Graduated from CSULB in December of 2016</h1>
+										<p>Bachelor of Science in Managment information Systems</p>
+									</div>
+								</div>
+						</div>
+							
+						<div class="item">
+							<img id="slideshow" src="Images/SealBeachHarbor.jpg">
+								<div class="container-fluid">
+									<div class="carousel-caption">
+										<h1>Free time</h1>
+										<p>I spend time with my dog, taking photos, and flying drones.</p>
+										<p>When not doing that I like to teach myself more about HTML, CSS, JavaScript, and Python.</p>
+									</div>
+								</div>
+						</div>
+						
+						<div class="item">
+							<img id="slideshow" src="Images/RPiCameraProject.jpg">
+								<div class="container-fluid">
+									<div class="carousel-caption">
+										<h1>Experience</h1>
+										<p>I have experience with HTML, CSS, JavaScript, JQuery, PHP, 
+										and Python. I am currently learning Java.</p>
+									</div>
+								</div>
+						</div>
+					</div>
+						
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#MySlide" role="button">
+						<i class="glyphicon glyphicon-chevron-left"></i>
+					</a>
+					<a class="right carousel-control" href="#MySlide" role="button">
+						<i class="glyphicon glyphicon-chevron-right"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<!-- My own CSS -->
+		<link rel="stylesheet" href="style.css">
+		
+		<script>
+		$(document).ready(function(){
+			
+		});
+		</script>
+	
+		<title>Brandon Rasmussen</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+		<!-- Navbar section -->
+			<nav class="navbar navbar-default navbar-static-top">
+				<div class="nav navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar navbar-brand" href="index.html" id="NavLogo">Brandon Rasmussen</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="MyNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="Index.html">Home</a></li>
+						
+						<!-- Dropdown Menu -->
+						<li class="dropdown" id="test">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
+							<i class="caret"></i></a>
+							<ul class="dropdown-menu">
+								<li><a href="Personal_Projects.html">Personal Projects</a></li>
+								<li><a href="School_Projects.html" id="active">School Projects</a></li>
+							</ul>
+						</li>
+						<li><a href="https://www.linkedin.com/in/brandon-rasmussen-486854132/" target="_blank"><img src="Images/linkedin-b&w.png"></img></a></li>
+						<li id="end"><a href="https://github.com/BRRasmussen" target="_blank">GitHub</a></li>
+					</ul>
+				</div>
+			</nav>
+		
+		<!-- Main Section -->	
+			<div class="container-fluid">
+				<h1 class="text-center pagination-centered">School Projects</h1>
+				<table class="table table-hover table-condensed text-justify">
+					<thead>
+						<tr>
+							<th class="text-center pagination-centered">Project Name</th>
+							<th class="text-center pagination-centered">Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="text-center pagination-centered"><a href="https://github.com/BRRasmussen/IS-445-Final-Project" target="_blank">IS 445 Final Project</a></td>
+							<td>Final project for Web Application Development class. This project required the use of HTML, CSS, JavaScript/JQuery, and PHP. 
+							The Website needed to be able to take an order on one page and allow for that order to be read on a different page.</td>
+						</tr>
+							
+						<tr>
+							<td class="text-center pagination-centered"><a href="https://github.com/BRRasmussen/IS-380-Final-Project" target="_blank">IS 380 Final Project</a></td>
+							<td>Final project for Database Management. This project used MySQL for the database language. 
+							In this project I had 5 warehouses with different amount of stock for 5 different items. 
+							The database kept track of customer order information (name, address, phone, warehouse and order), total price of the order, if the intended warehouse was able to cover the order, 
+							how much stock was left in the warehouse, and how many products a customer still neeeded to complete the order.</td>
+						</tr>
+						<tr>
+							<td class="text-center pagination-centered"><a href="https://github.com/BRRasmussen/IS-457-Final-Project" target="_blank">IS 457 Final Project</a></td>
+							<td>Final project for Wireless Systems and Mobile Applications. This project used Python and the Python extension called Kivy. 
+							The result was a virtual keyboard that can be used on a touchscreen device. The keyboard would play a different note depending on the key that was pressed.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

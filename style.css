@@ -1,0 +1,155 @@
+/* Navbar section */
+#active {
+	background-color: #bccad6;
+	color: #667292;
+}
+
+/* link color */
+.navbar-default .navbar-nav > li > a {
+	color: #bccad6;
+	border-color: #8d9db6;
+	border-radius: 20px;
+	font-size: 20px;
+}
+
+.navbar {
+	border-radius: 20px;
+	margin-right: 25px;
+	margin-left: 25px;
+	margin-bottom: -25px;
+	
+}
+
+/* NavLogo */
+#NavLogo{
+	margin-left: 25px;
+	color: #bccad6;
+	font-size: 25px;
+}
+
+#NavLogo:hover {
+	color:#bccad6;
+	background-color: #8d9db6;
+}
+
+/* right side of navbar */
+#end {
+	margin-right: 50px;
+}
+
+
+/* Navbar link visited */
+.navbar-default .navbar-nav > li > a:visited {
+	color: #bccad6;
+}
+
+/* navbar active hover */
+.navbar-default .navbar-nav > li > a#active:hover {
+	background-color:#8d9db6;
+	color: #bccad6;
+}
+
+/* navbar link hover */
+.navbar-default .navbar-nav > li > a:hover {
+	background-color: #8d9db6;
+	color: #bccad6;
+	border-radius: 20px;
+}
+
+/* Drop down */
+/* .dropdown:hover {
+	display: block;
+	background-color: #667292;
+	border-radius: 20px;
+	color: #bccad6;
+} */
+
+/* When menu is opened/closed in collapsed view */
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #bccad6;
+	background-color: #667292;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: #bccad6;
+	background-color: #8d9db6;
+}
+
+/* Desktop layout */
+.dropdown-menu > li > a:hover {
+	background-color: #8d9db6;
+	color: #bccad6;
+	border-radius: 20px;
+}
+
+/* When Dropdown is toggled */
+.navbar-default .navbar-nav > .open > a:focus {
+	color: #bccad6;
+	background-color: #8d9db6;
+}
+
+
+.dropdown-menu, .dropdown-menu > li > a, .dropdown-menu > li > a:visited {
+	background-color: #667292;
+	color: #bccad6;
+	border-radius: 20px;
+	font-size: 20px;
+}
+
+/* Navbar color and Settings */
+.navbar-default {
+	background-color: #667292;
+	color: #bccad6;
+	border-color: #667292;
+}
+/* Body */
+body {
+	background-color: #f1e3dd;
+}
+
+
+
+/* Carousel for index.html */
+/* Image settings for Carousel */
+.carousel-inner > .item > img {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.carousel-caption {
+	color: #bccad6;
+}
+
+/* adjust chevrons on left and right side of Carousel */
+.carousel-control {
+	margin-top: auto;
+	width: 5%;
+	position: absolute;
+	background-image: none !important;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+    margin-left: 350%;
+	margin-right: 350%;
+}
+
+/* For School/Personal Projects Pages */
+.table-responsive {
+	padding-top: 25px;
+}
+
+table {
+	color: #667292;
+	table-layout: fixed;
+}
+
+.table-hover > tbody > tr:hover{
+	background-color: #8d9db6;
+	color: #bccad6;
+}
+
+h1.text-center {
+	padding-top: 50px;
+	color: #667292;
+}

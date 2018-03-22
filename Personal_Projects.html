@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<!-- My own CSS -->
+		<link rel="stylesheet" href="style.css">
+		
+		<script>
+		$(document).ready(function(){
+			
+		});
+		</script>
+	
+		<title>Brandon Rasmussen</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+		<!-- Navbar section -->
+			<nav class="navbar navbar-default navbar-static-top">
+				<div class="nav navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar navbar-brand" href="index.html" id="NavLogo">Brandon Rasmussen</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="MyNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="Index.html">Home</a></li>
+						
+						<!-- Dropdown Menu -->
+						<li class="dropdown" id="test">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
+							<i class="caret"></i></a>
+							<ul class="dropdown-menu">
+								<li><a href="Personal_Projects.html" id="active">Personal Projects</a></li>
+								<li><a href="School_Projects.html">School Projects</a></li>
+							</ul>
+						</li>
+						<li><a href="https://www.linkedin.com/in/brandon-rasmussen-486854132/" target="_blank"><img src="Images/linkedin-b&w.png"></img></a></li>
+						<li id="end"><a href="https://github.com/BRRasmussen" target="_blank">GitHub</a></li>
+					</ul>
+				</div>
+			</nav>
+		
+		<!-- Main Section -->	
+			<div class="container-fluid">
+				<h1 class="text-center pagination-centered">Personal Projects</h1>
+				<table class="table table-hover table-condensed text-justify">
+					<thead>
+						<tr>
+							<th class="text-center pagination-centered">Project Name</th>
+							<th class="text-center pagination-centered">Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="text-center pagination-centered"><a href="https://github.com/BRRasmussen/Point-and-shoot-rpi" target="_blank">Point and Shoot Camera</a></td>
+							<td>First project I completed with a Raspberry Pi. The project used a Raspberry Pi 3, Raspberry Pi Camera Module, and a Adafruit 16x2 lcd and keypad kit.
+							The program was written completely in python with an option to shutdown the whole system. The camera is able to take pictures and record video with an option to increase
+							or decrease the length.</td>
+						</tr>
+							
+						<tr>
+							<td class="text-center pagination-centered"><a href="https://github.com/BRRasmussen/Camera-effect-selector" target="_blank">Camera Effect Selector</a></td>
+							<td>Simple program that allows the user to interact with the python shell giving the user the option to take a photo with an effect.
+							The program shows a preview image of the photo before taking the photo to confirm to the user that they want to take the photo.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
